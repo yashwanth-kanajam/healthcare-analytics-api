@@ -38,7 +38,7 @@ async def check_query(request: Request):
 app = FastAPI(
     title="Healthcare Analytics API",
     version="0.1.0",
-    description="Read-only portfolio aggregates. Synthetic claims and public county statistics; not a production clinical system.",
+    description="Read-only analytical aggregates. Synthetic claims and public county statistics; not a clinical system.",
     dependencies=[Depends(check_query)],
     responses={code: {"model": ErrorResponse} for code in (400, 404, 405, 422, 500)},
 )

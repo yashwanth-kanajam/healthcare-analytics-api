@@ -4,7 +4,7 @@ What the automated checks cover, and what they do not establish.
 
 ## Coverage
 
-Automated checks cover API contracts, input validation, error behaviour, deterministic responses, and reconciliation against the validated analytical artifacts. Specifically:
+Automated checks cover API contracts, input validation, error behavior, deterministic responses, and reconciliation against the validated analytical artifacts. Specifically:
 
 - All five routes return their declared response models.
 - Typed schemas reject unknown extra fields and non-finite numbers.
@@ -27,4 +27,4 @@ A real localhost HTTP server was run against all five routes, along with the Ope
 
 ## What this does not establish
 
-This is a small read-only interface over fixed artifacts. It makes no claim to production availability, authentication, authorisation, or operational hardening, and it carries every limitation of the analyses behind it.
+This is a small read-only interface over fixed artifacts. It makes no claim to production availability, authentication, authorization, or operational hardening, and it carries every limitation of the analyses behind it.
