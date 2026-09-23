@@ -1,0 +1,37 @@
+{
+  "artifact_version": "1",
+  "sources": [
+    {
+      "file": "claims.json",
+      "project": "healthcare-claims-quality",
+      "project_version": "0.3.0",
+      "commit": "b84bb77e424c68683fa61d7dd7b342d092e03186",
+      "source_path": "reports/results.json",
+      "sha256": "06b748c8a9223af2e25397a713a923ba8ffdca5e10c61e692f02d30d68cadb0c"
+    },
+    {
+      "file": "quality.json",
+      "project": "healthcare-claims-quality",
+      "project_version": "0.3.0",
+      "commit": "b84bb77e424c68683fa61d7dd7b342d092e03186",
+      "source_path": "reports/expanded/expanded-results.json",
+      "sha256": "4116c98dbe5da3b2a3475faa369767b2c4575ddd0b33867e731187ec01927195"
+    },
+    {
+      "file": "spending.json",
+      "project": "healthcare-claims-quality",
+      "project_version": "0.3.0",
+      "commit": "b84bb77e424c68683fa61d7dd7b342d092e03186",
+      "source_path": "dashboard/dashboard-reconciliation.json",
+      "sha256": "e4299018f208343590594ad95e33ff72440628e1fd29bb8381aa397fd7779ac8"
+    },
+    {
+      "file": "counties.csv",
+      "project": "ma-primary-care-access",
+      "project_version": "0.1.0",
+      "commit": "67bd860b69ac33384dd238647c83169d250f8d5b",
+      "source_path": "analysis/county_comparison.csv",
+      "sha256": "33a6d6f77b44294248db5ba35d50c5c076034ca4b03d03e97f609502bd276ca8"
+    }
+  ]
+}

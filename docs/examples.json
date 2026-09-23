@@ -1,0 +1,399 @@
+{
+  "/health": {
+    "status": "ok",
+    "api_version": "0.1.0",
+    "artifact_version": "1"
+  },
+  "/quality/summary": {
+    "provenance": {
+      "project": "healthcare-claims-quality",
+      "project_version": "0.3.0",
+      "commit": "b84bb77e424c68683fa61d7dd7b342d092e03186",
+      "artifact_version": "1",
+      "source_period": "Synthetic calendar year 2024",
+      "limitation": "Synthetic data only; no real payer or patient data. Controlled results do not estimate real-world performance."
+    },
+    "metrics": [
+      {
+        "name": "exact_duplicate.tp",
+        "value": 32,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "exact_duplicate.fp",
+        "value": 0,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "exact_duplicate.fn",
+        "value": 0,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "exact_duplicate.precision",
+        "value": 1.0,
+        "unit": "proportion",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": {
+          "name": "predicted_positive_units",
+          "value": 32,
+          "unit": "evaluation units"
+        },
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "exact_duplicate.recall",
+        "value": 1.0,
+        "unit": "proportion",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": {
+          "name": "labeled_positive_units",
+          "value": 32,
+          "unit": "evaluation units"
+        },
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "broken_foreign_key.tp",
+        "value": 236,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "broken_foreign_key.fp",
+        "value": 0,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "broken_foreign_key.fn",
+        "value": 0,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "broken_foreign_key.precision",
+        "value": 1.0,
+        "unit": "proportion",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": {
+          "name": "predicted_positive_units",
+          "value": 236,
+          "unit": "evaluation units"
+        },
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "broken_foreign_key.recall",
+        "value": 1.0,
+        "unit": "proportion",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": {
+          "name": "labeled_positive_units",
+          "value": 236,
+          "unit": "evaluation units"
+        },
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "invalid_date_sequence.tp",
+        "value": 28,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "invalid_date_sequence.fp",
+        "value": 0,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "invalid_date_sequence.fn",
+        "value": 0,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "invalid_date_sequence.precision",
+        "value": 1.0,
+        "unit": "proportion",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": {
+          "name": "predicted_positive_units",
+          "value": 28,
+          "unit": "evaluation units"
+        },
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "invalid_date_sequence.recall",
+        "value": 1.0,
+        "unit": "proportion",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": {
+          "name": "labeled_positive_units",
+          "value": 28,
+          "unit": "evaluation units"
+        },
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "financial_reconciliation.tp",
+        "value": 28,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "financial_reconciliation.fp",
+        "value": 0,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "financial_reconciliation.fn",
+        "value": 0,
+        "unit": "evaluation units",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "financial_reconciliation.precision",
+        "value": 1.0,
+        "unit": "proportion",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": {
+          "name": "predicted_positive_units",
+          "value": 28,
+          "unit": "evaluation units"
+        },
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "financial_reconciliation.recall",
+        "value": 1.0,
+        "unit": "proportion",
+        "basis": "Expanded evaluation: 18 scenarios x 4 seeds; category-specific labeled units, not patients or defect events.",
+        "denominator": {
+          "name": "labeled_positive_units",
+          "value": 28,
+          "unit": "evaluation units"
+        },
+        "source_period": "Synthetic calendar year 2024"
+      }
+    ]
+  },
+  "/spending/summary": {
+    "provenance": {
+      "project": "healthcare-claims-quality",
+      "project_version": "0.3.0",
+      "commit": "b84bb77e424c68683fa61d7dd7b342d092e03186",
+      "artifact_version": "1",
+      "source_period": "Synthetic calendar year 2024",
+      "limitation": "Synthetic data only; no real payer or patient data. Controlled results do not estimate real-world performance."
+    },
+    "metrics": [
+      {
+        "name": "paid_cents",
+        "value": 1590527,
+        "unit": "USD cents",
+        "basis": "Validated clean baseline, seed 17; eligible claims and distinct enrolled member-months.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "claims",
+        "value": 101,
+        "unit": "claims",
+        "basis": "Validated clean baseline, seed 17; eligible claims and distinct enrolled member-months.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "members",
+        "value": 24,
+        "unit": "members",
+        "basis": "Validated clean baseline, seed 17; eligible claims and distinct enrolled member-months.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "member_months",
+        "value": 288,
+        "unit": "member-months",
+        "basis": "Validated clean baseline, seed 17; eligible claims and distinct enrolled member-months.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "paid_per_member_month",
+        "value": 55.22663194444445,
+        "unit": "USD per member-month",
+        "basis": "Validated clean baseline, seed 17; eligible claims and distinct enrolled member-months.",
+        "denominator": {
+          "name": "enrolled_member_months",
+          "value": 288,
+          "unit": "member-months"
+        },
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "claims_per_1000_member_months",
+        "value": 350.69444444444446,
+        "unit": "claims per 1,000 member-months",
+        "basis": "Validated clean baseline, seed 17; eligible claims and distinct enrolled member-months.",
+        "denominator": {
+          "name": "enrolled_member_months",
+          "value": 288,
+          "unit": "member-months"
+        },
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "incorrect_join_paid_cents",
+        "value": 3701102,
+        "unit": "USD cents",
+        "basis": "Intentional header-line join error demonstration; not actual spending.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      },
+      {
+        "name": "overstatement_cents",
+        "value": 2110575,
+        "unit": "USD cents",
+        "basis": "Intentional header-line join error demonstration; not actual spending.",
+        "denominator": null,
+        "source_period": "Synthetic calendar year 2024"
+      }
+    ]
+  },
+  "/access/counties/25011": {
+    "provenance": {
+      "project": "ma-primary-care-access",
+      "project_version": "0.1.0",
+      "commit": "67bd860b69ac33384dd238647c83169d250f8d5b",
+      "artifact_version": "1",
+      "source_period": "ACS 2019-2023; physician counts 2023",
+      "limitation": "County screening indicators do not establish unmet need or an optimal clinic location."
+    },
+    "county": {
+      "county_fips": "25011",
+      "county": "Franklin",
+      "baseline_selected": true,
+      "capacity_stable": true,
+      "metrics": [
+        {
+          "name": "population",
+          "value": 70922.0,
+          "unit": "people",
+          "basis": "ACS total population",
+          "denominator": null,
+          "source_period": "ACS 2019-2023"
+        },
+        {
+          "name": "pcp_2023",
+          "value": 43.0,
+          "unit": "physicians",
+          "basis": "Nonfederal primary-care patient-care MDs and DOs; excludes residents and age 75+",
+          "denominator": null,
+          "source_period": "2023"
+        },
+        {
+          "name": "pcp_per_100k",
+          "value": 60.629987874002424,
+          "unit": "physicians per 100,000 people",
+          "basis": "Physician counts divided by ACS total population",
+          "denominator": {
+            "name": "population",
+            "value": 70922.0,
+            "unit": "people"
+          },
+          "source_period": "ACS 2019-2023; workforce 2023 (2022 in prior-year sensitivity)"
+        },
+        {
+          "name": "poverty_pct",
+          "value": 12.157411905918664,
+          "unit": "percent",
+          "basis": "Population below poverty threshold / population with poverty status determined",
+          "denominator": {
+            "name": "poverty_population",
+            "value": 69982.0,
+            "unit": "people"
+          },
+          "source_period": "ACS 2019-2023"
+        },
+        {
+          "name": "age65_pct",
+          "value": 23.931925213614957,
+          "unit": "percent",
+          "basis": "Population age 65+ / total population",
+          "denominator": {
+            "name": "population",
+            "value": 70922.0,
+            "unit": "people"
+          },
+          "source_period": "ACS 2019-2023"
+        },
+        {
+          "name": "poverty_moe_pp",
+          "value": 1.2258581653805596,
+          "unit": "percentage points",
+          "basis": "Approximate 90% poverty percentage margin of error",
+          "denominator": null,
+          "source_period": "ACS 2019-2023"
+        },
+        {
+          "name": "age65_moe_pp",
+          "value": 0.7963116184981212,
+          "unit": "percentage points",
+          "basis": "Approximate 90% age 65+ percentage margin of error",
+          "denominator": null,
+          "source_period": "ACS 2019-2023"
+        },
+        {
+          "name": "selected_scenarios",
+          "value": 8.0,
+          "unit": "scenarios",
+          "basis": "Selections across eight reasonable assumptions; not a probability",
+          "denominator": {
+            "name": "evaluated_scenarios",
+            "value": 8.0,
+            "unit": "scenarios"
+          },
+          "source_period": "ACS 2019-2023; workforce 2023 (2022 in prior-year sensitivity)"
+        }
+      ]
+    }
+  },
+  "/access/counties?selection=invalid": {
+    "error": {
+      "code": "unsupported_value",
+      "message": "Unsupported filter value."
+    }
+  }
+}

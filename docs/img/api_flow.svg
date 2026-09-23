@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 430" width="1160" height="430" font-family="system-ui,-apple-system,Segoe UI,sans-serif" role="img" aria-labelledby="t d">
+<title id='t'>How a request is served</title>
+<desc id='d'>A request enters the FastAPI application, which validates the path and query parameters and returns a typed response or a structured error. Values come from four immutable artifact files copied from the claims-quality and primary-care-access projects, whose SHA-256 hashes are checked once when the artifact store loads.</desc>
+<rect width="1160" height="430" fill="#ffffff"/>
+<text x="40" y="44" font-size="20" font-weight="650" fill="#13243a" letter-spacing="-0.3">How a request is served</text>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#13243a"/></marker></defs>
+<rect x="40" y="86" width="250" height="196" rx="7" fill="#f1f5fb" stroke="#d8e0eb" stroke-width="1.5"/>
+<text x="58" y="116" font-size="15" font-weight="650" fill="#13243a">Packaged artifacts</text>
+<text x="58" y="140" font-size="13.5" fill="#516176">claims.json</text>
+<text x="58" y="161" font-size="13.5" fill="#516176">quality.json</text>
+<text x="58" y="182" font-size="13.5" fill="#516176">spending.json</text>
+<text x="58" y="203" font-size="13.5" fill="#516176">counties.csv</text>
+<text x="58" y="224" font-size="13.5" fill="#516176"></text>
+<text x="58" y="245" font-size="13.5" fill="#516176">copied byte-for-byte from the</text>
+<text x="58" y="266" font-size="13.5" fill="#516176">claims-quality and access projects</text>
+<rect x="350" y="126" width="230" height="116" rx="7" fill="#f1f5fb" stroke="#d8e0eb" stroke-width="1.5"/>
+<text x="368" y="156" font-size="15" font-weight="650" fill="#13243a">Artifact store</text>
+<text x="368" y="180" font-size="13.5" fill="#516176">verifies SHA-256 against</text>
+<text x="368" y="201" font-size="13.5" fill="#516176">the manifest on first load</text>
+<text x="368" y="222" font-size="13.5" fill="#516176">cached for the process</text>
+<rect x="640" y="86" width="250" height="196" rx="7" fill="#eaf0ff" stroke="#124fc6" stroke-width="1.5"/>
+<text x="658" y="116" font-size="15" font-weight="650" fill="#13243a">FastAPI application</text>
+<text x="658" y="140" font-size="13.5" fill="#516176">path and query validation</text>
+<text x="658" y="161" font-size="13.5" fill="#516176">typed request/response models</text>
+<text x="658" y="182" font-size="13.5" fill="#516176">unknown fields rejected</text>
+<text x="658" y="203" font-size="13.5" fill="#516176"></text>
+<text x="658" y="224" font-size="13.5" fill="#516176">5 read-only GET routes</text>
+<rect x="950" y="92" width="170" height="78" rx="7" fill="#f1f5fb" stroke="#d8e0eb" stroke-width="1.5"/>
+<text x="968" y="122" font-size="15" font-weight="650" fill="#13243a">200 response</text>
+<text x="968" y="146" font-size="13.5" fill="#516176">typed JSON with</text>
+<text x="968" y="167" font-size="13.5" fill="#516176">units and provenance</text>
+<rect x="950" y="190" width="170" height="78" rx="7" fill="#f1f5fb" stroke="#d8e0eb" stroke-width="1.5"/>
+<text x="968" y="220" font-size="15" font-weight="650" fill="#13243a">4xx / 500</text>
+<text x="968" y="244" font-size="13.5" fill="#516176">structured error</text>
+<text x="968" y="265" font-size="13.5" fill="#516176">with a stable code</text>
+<line x1="290" y1="184" x2="348" y2="184" stroke="#13243a" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="580" y1="184" x2="638" y2="184" stroke="#13243a" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="890" y1="140" x2="948" y2="133" stroke="#13243a" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="890" y1="215" x2="948" y2="226" stroke="#13243a" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="40" y="316" width="1080" height="74" rx="7" fill="#ffffff" stroke="#124fc6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="62" y="345" font-size="14.5" font-weight="650" fill="#13243a">Reconciliation checks</text>
+<text x="62" y="369" font-size="13.5" fill="#516176">Every metric and denominator the API returns is compared against the artifact it came from, so the interface cannot become a second, divergent source of truth.</text>
+</svg>
