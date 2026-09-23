@@ -2,7 +2,7 @@
 
 **Validated analytical results should be usable by more than notebooks and dashboards.** This is a small read-only FastAPI interface that exposes selected quality, spending and access metrics through typed contracts, with input validation, predictable errors, and reconciliation back to the source analytical artifacts.
 
-**Portfolio demonstration only.** Claims data is synthetic, with no real payer or patient data. County indicators do not establish unmet need or identify an optimal clinic location. This is not a production clinical system.
+This is a read-only interface over fixed analytical artifacts, not a healthcare or clinical system. Claims data is synthetic, with no real payer or patient data, and county indicators do not establish unmet need or identify an optimal clinic location.
 
 ## What the API exposes
 
@@ -14,7 +14,7 @@
 | `/access/counties` | All 14 Massachusetts counties, sorted by FIPS |
 | `/access/counties/{county_fips}` | One county |
 
-Analytical responses carry units, source period, basis and the relevant denominator, so no number arrives without the context needed to read it. Money stays in integer USD cents except the explicitly labelled per-member-month rate, and a `null` means unavailable rather than zero.
+Analytical responses carry units, source period, basis and the relevant denominator, so no number arrives without the context needed to read it. Money stays in integer USD cents except the explicitly labeled per-member-month rate, and a `null` means unavailable rather than zero.
 
 ## How a request is served
 
@@ -88,13 +88,13 @@ curl http://127.0.0.1:8000/access/counties/99999
 
 One metric is shown above; the live response returns the full list. The complete set of recorded requests and responses is in [`docs/examples.json`](docs/examples.json).
 
-The `commit` in `provenance` identifies the exact revision of the upstream project the artifact was copied from, so a consumer can tell which version of the analysis produced a number.
+Each artifact retains the source revision identifier recorded when it was generated, so a consumer can tell which version of the analysis produced a number. That identifier is an internal build record, not a reference a reviewer resolves — the published repositories linked below are the review path for the analyses.
 
 ## Reconciliation and testing
 
 Every metric and denominator the API returns is compared against the source artifact it is served from, and artifact hashes are verified against the manifest when the store loads. **This is what stops the interface becoming a second, divergent source of truth.**
 
-Automated checks cover API contracts, input validation, error behaviour, deterministic responses, and that reconciliation. They confirm the interface serves the analyses faithfully — they are not new validation of the analyses themselves.
+Automated checks cover API contracts, input validation, error behavior, deterministic responses, and that reconciliation. They confirm the interface serves the analyses faithfully — they are not new validation of the analyses themselves.
 
 Details in [validation](docs/VERIFICATION.md) and [provenance](docs/PROVENANCE.md).
 
@@ -105,7 +105,7 @@ The API packages validated analytical artifacts from two published case studies:
 - **[Healthcare Claims Quality & Financial Reconciliation](https://github.com/yashwanth-kanajam/healthcare-claims-quality)** — source of `claims.json`, `quality.json` and `spending.json`
 - **[Massachusetts Primary Care Access Planning](https://github.com/yashwanth-kanajam/ma-primary-care-access)** — source of `counties.csv`
 
-The bundled artifacts were hash-verified and independently checked against the corresponding files in those public repositories before release. The `commit` recorded inside each artifact's provenance is the revision the artifact was generated from; treat the repositories linked above as the source of truth for reviewing the analyses themselves.
+The bundled artifacts were hash-verified and independently checked against the corresponding files in those public repositories before release. Treat the repositories linked above as the source of truth for reviewing the analyses themselves.
 
 ## Run it locally
 
