@@ -1,6 +1,6 @@
 # Healthcare Analytics API
 
-**Validated analytical results should be usable by more than notebooks and dashboards.** This is a small read-only FastAPI interface that exposes selected quality, spending and access metrics through typed contracts, with input validation, predictable errors, and reconciliation back to the source analytical artifacts.
+**Validated analytical results should be usable by more than notebooks and dashboards.** This is a read-only FastAPI interface that exposes selected quality, spending and access metrics through typed contracts, with input validation, predictable errors, and reconciliation back to the source analytical artifacts.
 
 This is a read-only interface over fixed analytical artifacts, not a healthcare or clinical system. Claims data is synthetic, with no real payer or patient data, and county indicators do not establish unmet need or identify an optimal clinic location.
 
