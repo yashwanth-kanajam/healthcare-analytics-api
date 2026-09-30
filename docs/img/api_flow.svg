@@ -39,5 +39,5 @@
 <line x1="890" y1="215" x2="948" y2="226" stroke="#13243a" stroke-width="1.6" marker-end="url(#a)"/>
 <rect x="40" y="316" width="1080" height="74" rx="7" fill="#ffffff" stroke="#124fc6" stroke-width="1.5" stroke-dasharray="6 4"/>
 <text x="62" y="345" font-size="14.5" font-weight="650" fill="#13243a">Reconciliation checks</text>
-<text x="62" y="369" font-size="13.5" fill="#516176">Every metric and denominator the API returns is compared against the artifact it came from, so the interface cannot become a second, divergent source of truth.</text>
+<text x="62" y="369" font-size="13.5" fill="#516176">Returned metrics and denominators are reconciled against the packaged source artifacts.</text>
 </svg>
